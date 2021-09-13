@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:elevation="4dp"
+            app:cardCornerRadius="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <ImageView
+                android:id="@+id/image_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/trending1" />
+
+        </androidx.cardview.widget.CardView>
+
+
+    <View
+        android:id="@+id/view_separation"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:visibility="invisible"
+        android:layout_marginBottom="6dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="@+id/cardView" />
+
+        <TextView
+            android:id="@+id/name_item"
+            style="@style/SubTitleTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/item_margin"
+            android:text="@string/item_plant_name"
+            app:layout_constraintBottom_toTopOf="@+id/view_separation"
+            app:layout_constraintStart_toEndOf="@+id/cardView" />
+
+        <TextView
+            android:id="@+id/descripton_item"
+            style="@style/DefaultTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/item_margin"
+            android:text="@string/item_plant_description"
+            app:layout_constraintStart_toEndOf="@+id/cardView"
+            app:layout_constraintTop_toBottomOf="@+id/view_separation" />
+
+
+    <TextView
+        android:id="@+id/item_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/default_margin"
+        android:layout_marginBottom="6dp"
+        android:text="@string/basket_page_item_quantity"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView" />
+
+    <ImageView
+        android:id="@+id/add_quantity_item_my_basket"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@drawable/ic_add_item_my_basket"
+        app:layout_constraintStart_toStartOf="@id/item_quantity"
+        app:layout_constraintBottom_toTopOf="@+id/item_quantity"
+        app:layout_constraintEnd_toEndOf="@id/item_quantity" />
+
+
+
+    <ImageView
+        android:id="@+id/remove_quantity_item_my_basket"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@drawable/ic_remove_item_my_basket"
+        app:layout_constraintTop_toBottomOf="@+id/item_quantity"
+        app:layout_constraintEnd_toEndOf="@id/item_quantity"
+        app:layout_constraintStart_toStartOf="@id/item_quantity"
+         />
+
+
+
+    <TextView
+        android:id="@+id/price_plant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/basket_page_price_plant"
+        app:layout_constraintStart_toStartOf="@id/descripton_item"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/descripton_item" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

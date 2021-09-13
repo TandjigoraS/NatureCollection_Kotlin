@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">Nature Emoi</string>
+
+    <string name="bottom_home_item">Accueil</string>
+    <string name="bottom_collection_item">Collection</string>
+    <string name="bottom_add_plant_item">Ajouter</string>
+    <string name="bottom_my_basket_item">Panier</string>
+
+
+
+    <!-- Page d'accueil -->
+    <string name="home_page_title">A découvrir</string>
+    <string name="home_page_last_plant_section">Derniéres plantes</string>
+
+    <!-- Page de collection -->
+    <string name="collection_page_title">Ma Collection</string>
+
+    <!-- Page d'Ajout de plante-->
+    <string name="add_plant_page_title">Ajout d\'une plante</string>
+    <string name="add_plant_page_upload_button">Charger Image</string>
+    <string name="add_plant_page_name_input">@string/item_plant_name</string>
+    <string name="add_plant_page_description_input">@string/item_plant_description</string>
+    <string name="add_plant_page_">Ajout d\'une plante</string>
+    <string-array name="add_plant_page_grow_spinner_input">
+        <item>Croissance : Lente</item>
+        <item>Croissance : Moyenne</item>
+        <item>Croissance : Rapide</item>
+    </string-array>
+
+    <string-array name="add_plant_page_water_spinner_input">
+        <item>Consommation : Faible</item>
+        <item>Consommation : Moyenne</item>
+        <item>Consommation : Elevée</item>
+    </string-array>
+
+
+    <string name="add_plant_page_confirm_button">Confirmer</string>
+
+    <!-- Page de mon panier -->
+    <string name="basket_page_title">Mon Panier</string>
+    <string name="basket_page_promo_code">Entrer un code promotionnelle</string>
+    <string name="basket_page_submit_promo_code">Soumettre</string>
+    <string name="basket_page_in_stock">En Stock</string>
+    <string name="basket_page_price_plant">€5.00</string>
+    <string name="basket_page_price_deliver">€4.00</string>
+    <string name="basket_page_price_total">€9.00</string>
+    <string name="basket_page_item_total">Mon Panier : Total</string>
+    <string name="basket_page_home_deliver">Livraison à domicile</string>
+    <string name="basket_page_total">Total</string>
+    <string name="basket_page_payment">EFFECTUER LE PAIEMENT</string>
+    <string name="basket_page_item_quantity">1</string>
+    <string name="basket_page_price_plant_total">€%d</string>
+
+
+
+    <!-- Fenetre Popup de details-->
+
+    <string name="popup_plant_name">Plant name</string>
+    <string name="popup_plant_description_title">Description</string>
+    <string name="popup_plant_description_subtitle">Petite Description</string>
+    <string name="popup_plant_grow_title">Croissance</string>
+    <string name="popup_plant_grow_subtitle">Lente</string>
+    <string name="popup_plant_water_title">Consommation Eau</string>
+    <string name="popup_plant_water_subtitle">Faible</string>
+    <string name="popup_plant_price_title">Prix</string>
+    <string name="popup_plant_price_subtitle">€5.00</string>
+    <string name="popup_plant_add_plant_basket">ADD TO CART</string>
+
+
+
+
+
+    <!-- Plante customise -->
+    <string name="item_plant_name">Nom de la plante</string>
+    <string name="item_plant_description">Description de la plante</string>
+
+</resources>

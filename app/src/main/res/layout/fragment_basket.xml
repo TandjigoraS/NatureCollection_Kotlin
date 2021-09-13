@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/basket_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:elevation="5dp"
+        app:cardCornerRadius="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_margin"
+                android:textSize="12sp"
+                android:hint="@string/basket_page_promo_code" />
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="@dimen/item_margin"
+                android:layout_marginStart="@dimen/item_margin"
+                android:background="@color/green"
+                android:text="@string/basket_page_submit_promo_code"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:elevation="5dp"
+        app:cardCornerRadius="6dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <View
+            android:id="@+id/view_separation"
+            android:layout_width="1dp"
+            android:layout_height="60dp"
+            android:background="@color/green"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/total_plant_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/basket_page_item_total"
+                app:layout_constraintEnd_toStartOf="@+id/view_separation"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/total_price_plants"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/basket_page_price_plant"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view_separation"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view_separation_horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_height="1dp"
+                android:background="@color/littleGray"
+                app:layout_constraintTop_toBottomOf="@+id/total_plant_title"/>
+
+            <TextView
+                android:id="@+id/home_deliver_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/basket_page_home_deliver"
+                app:layout_constraintStart_toStartOf="@id/total_plant_title"
+                app:layout_constraintTop_toBottomOf="@id/view_separation_horizontal" />
+
+
+
+            <TextView
+                android:id="@+id/price_deliver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/basket_page_price_deliver"
+                app:layout_constraintStart_toStartOf="@+id/total_price_plants"
+                app:layout_constraintTop_toBottomOf="@id/view_separation_horizontal" />
+
+
+            <View
+                android:id="@+id/view_separation_horizontal_2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@color/littleGray"
+                app:layout_constraintTop_toBottomOf="@+id/home_deliver_title"/>
+
+            <TextView
+                android:id="@+id/total_basket_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/basket_page_total"
+                app:layout_constraintStart_toStartOf="@+id/home_deliver_title"
+                app:layout_constraintTop_toBottomOf="@+id/view_separation_horizontal_2" />
+
+
+            <TextView
+                android:id="@+id/total_basket_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/basket_page_price_total"
+                app:layout_constraintStart_toStartOf="@+id/price_deliver"
+                app:layout_constraintTop_toBottomOf="@+id/view_separation_horizontal_2"/>
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        app:cardCornerRadius="6dp"
+        android:elevation="5dp">
+
+        <Button
+            android:id="@+id/payment_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/basket_page_payment"
+            android:background="@color/green"/>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</LinearLayout>
